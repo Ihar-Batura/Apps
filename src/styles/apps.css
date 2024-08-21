@@ -1,0 +1,94 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* make images easier to work with */
+
+.header,
+.footer {
+  background-color: rgb(148, 81, 249);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo-container {
+  display: flex;
+  text-align: center;
+}
+
+.logo-container a {
+  text-decoration: none;
+}
+.logo-img {
+  width: 35px;
+}
+
+.logo-text {
+  color: black;
+}
+
+h1 {
+  color: yellow;
+}
+
+.footer p {
+  font-size: 25px;
+}
+
+.contacts-container > * {
+  text-decoration: none;
+}
+
+.contacts-container a > * {
+  width: 32px;
+  margin: 0 5px;
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    padding: 5px;
+  }
+
+  .logo-img {
+    width: 32px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  .footer p {
+    font-size: 18px;
+  }
+}
