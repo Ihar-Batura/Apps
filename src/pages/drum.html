@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/apps.png"
+    />
+    <link rel="stylesheet" href="../styles/apps.css" />
+    <link rel="stylesheet" href="../styles/drum.css" />
+    <script src="../js/drum.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a href="../index.html">
+            <img
+              class="logo-img"
+              src="../assets/icons/apps-logo.png"
+              alt="logo"
+            />
+            <p class="logo-text">My Apps</p>
+          </a>
+        </div>
+        <h1>Study JavaScript every day</h1>
+        <a href="https://javascript.info/" target="_blank">
+          <img
+            class="logo-img"
+            src="../assets/icons/logo-js.png"
+            alt="logo JS"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="keys-container">
+        <div data-key="KeyA" class="key">
+          A
+          <span class="sound-name">clap</span>
+        </div>
+        <div data-key="KeyS" class="key">
+          S
+          <span class="sound-name">hihat</span>
+        </div>
+        <div data-key="KeyD" class="key">
+          D
+          <span class="sound-name">kick</span>
+        </div>
+        <div data-key="KeyF" class="key">
+          F
+          <span class="sound-name">openhat</span>
+        </div>
+        <div data-key="KeyG" class="key">
+          G
+          <span class="sound-name">boom</span>
+        </div>
+        <div data-key="KeyH" class="key">
+          H
+          <span class="sound-name">ride</span>
+        </div>
+        <div data-key="KeyJ" class="key">
+          J
+          <span class="sound-name">snare</span>
+        </div>
+        <div data-key="KeyK" class="key">
+          K
+          <span class="sound-name">tom</span>
+        </div>
+        <div data-key="KeyL" class="key">
+          L
+          <span class="sound-name">tink</span>
+        </div>
+      </div>
+      <audio data-key="KeyA" src="../assets/sounds/drum/clap.wav"></audio>
+      <audio data-key="KeyS" src="../assets/sounds/drum/hihat.wav"></audio>
+      <audio data-key="KeyD" src="../assets/sounds/drum/kick.wav"></audio>
+      <audio data-key="KeyF" src="../assets/sounds/drum/openhat.wav"></audio>
+      <audio data-key="KeyG" src="../assets/sounds/drum/boom.wav"></audio>
+      <audio data-key="KeyH" src="../assets/sounds/drum/ride.wav"></audio>
+      <audio data-key="KeyJ" src="../assets/sounds/drum/snare.wav"></audio>
+      <audio data-key="KeyK" src="../assets/sounds/drum/tom.wav"></audio>
+      <audio data-key="KeyL" src="../assets/sounds/drum/tink.wav"></audio>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>2024</p>
+        <div class="contacts-container">
+          <a href="https://github.com/Ihar-Batura" target="_blank">
+            <img src="../assets/icons/logo-git.png" alt="logo git" />
+          </a>
+          <a
+            href="https://discordapp.com/users/925457041785512027/"
+            target="_blank"
+          >
+            <img src="../assets/icons/logo-discord.png" alt="logo discord" />
+          </a>
+          <a href="mailto:a17331582@gmail.com">
+            <img src="../assets/icons/logo-mail.png" alt="logo mail" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
