@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/apps.png"
+    />
+    <link rel="stylesheet" href="../styles/apps.css" />
+    <link rel="stylesheet" href="../styles/editor.css" />
+    <script src="../js/editor.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a href="../index.html">
+            <img
+              class="logo-img"
+              src="../assets/icons/apps-logo.png"
+              alt="logo"
+            />
+            <p class="logo-text">My Apps</p>
+          </a>
+        </div>
+        <h1>Study JavaScript every day</h1>
+        <a href="https://javascript.info/" target="_blank">
+          <img
+            class="logo-img"
+            src="../assets/icons/logo-js.png"
+            alt="logo JS"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <h2>Photo editor</h2>
+      <div class="editor-container">
+        <div class="controller">
+          <h3>Filters:</h3>
+          <label for="base">Base Color</label>
+          <input id="base" type="color" name="base" value="#ffc600" />
+
+          <label for="spacing">Spacing:</label>
+          <input
+            id="spacing"
+            type="range"
+            name="spacing"
+            min="5"
+            max="200"
+            value="35"
+            data-sizing="px"
+          />
+
+          <label for="blur">Blur:</label>
+          <input
+            id="blur"
+            type="range"
+            name="blur"
+            min="0"
+            max="25"
+            value="0"
+            data-sizing="px"
+          />
+
+          <label for="inversion">Inversion:</label>
+          <input
+            id="inversion"
+            type="range"
+            name="inversion"
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="%"
+          />
+
+          <label for="sepia">Sepia:</label>
+          <input
+            id="sepia"
+            type="range"
+            name="sepia"
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="%"
+          />
+
+          <label for="saturate">Saturate:</label>
+          <input
+            id="saturate"
+            type="range"
+            name="saturate"
+            min="0"
+            max="100"
+            value="100"
+            data-sizing="%"
+          />
+        </div>
+        <div class="img-box">
+          <img
+            class="editor-img"
+            src="../assets/img/editor-city.jpg"
+            alt="city"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>2024</p>
+        <div class="contacts-container">
+          <a href="https://github.com/Ihar-Batura" target="_blank">
+            <img src="../assets/icons/logo-git.png" alt="logo git" />
+          </a>
+          <a
+            href="https://discordapp.com/users/925457041785512027/"
+            target="_blank"
+          >
+            <img src="../assets/icons/logo-discord.png" alt="logo discord" />
+          </a>
+          <a href="mailto:a17331582@gmail.com">
+            <img src="../assets/icons/logo-mail.png" alt="logo mail" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
