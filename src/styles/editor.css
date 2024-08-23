@@ -1,0 +1,84 @@
+:root {
+  --base: #ffc600;
+  --spacing: 35px;
+  --blur: 0px;
+  --inversion: 0%;
+  --sepia: 0%;
+  --saturate: 100%;
+}
+
+.img-box {
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+  width: 590px;
+}
+
+.editor-img {
+  filter: invert(var(--inversion)) sepia(var(--sepia)) saturate(var(--saturate));
+  width: 100%;
+}
+
+.main {
+  background: var(--base);
+  display: flex;
+  flex-direction: column;
+}
+
+.main h2 {
+  font-size: 45px;
+  margin: 15px auto;
+}
+
+.editor-container {
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.controller > label {
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.controller > input {
+  margin-top: 5px;
+}
+
+@media (max-width: 810px) {
+  .main h2 {
+    margin: 5px auto;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .controller > label {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+
+  .editor-container {
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img-box {
+    width: 100%;
+    max-width: 500px;
+  }
+}

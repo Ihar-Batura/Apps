@@ -35,6 +35,9 @@ p {
   background-color: rgb(148, 81, 249);
 }
 
+body {
+  letter-spacing: 0.05em;
+}
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -68,6 +71,7 @@ h1 {
 }
 
 .apps-container {
+  padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
