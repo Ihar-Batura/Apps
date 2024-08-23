@@ -79,12 +79,14 @@ calculator.innerHTML = `
 </div>
 `;
 
-// Find all buttons and etc
+// Find all buttons
 const btnsNumbers = document.querySelectorAll('.number');
 const btnsOperations = document.querySelectorAll('.operator');
 const btnDecimal = document.getElementById('decimal');
 const btnsCrear = document.querySelectorAll('.clear-btn');
+// Find input display
 const display = document.getElementById('display');
+// Create global variables
 let memoryCurrentNumber = 0;
 let memoryNewNumber = false;
 let memoryPendingOperation = '';
@@ -112,6 +114,8 @@ for (let i = 0; i < btnsCrear.length; i++) {
 }
 
 btnDecimal.addEventListener('click', addDot);
+
+// Functions
 
 function numberPress(number) {
   if (memoryNewNumber) {
