@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/apps.png"
+    />
+    <link rel="stylesheet" href="../styles/apps.css" />
+    <link rel="stylesheet" href="../styles/meditation.css" />
+    <script src="../js/meditation.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a href="../index.html">
+            <img
+              class="logo-img"
+              src="../assets/icons/apps-logo.png"
+              alt="logo"
+            />
+            <p class="logo-text">My Apps</p>
+          </a>
+        </div>
+        <h1>Study JavaScript every day</h1>
+        <a href="https://javascript.info/" target="_blank">
+          <img
+            class="logo-img"
+            src="../assets/icons/logo-js.png"
+            alt="logo JS"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main video-container">
+      <div class="wrapper app-container">
+        <video loop>
+          <source src="../assets/video/rain.mp4" type="video/mp4" />
+        </video>
+        <div class="time-select">
+          <button data-time="120">2 minutes</button>
+          <button data-time="300">5 minutes</button>
+          <button data-time="600">10 minutes</button>
+        </div>
+        <div class="player-container">
+          <audio class="song">
+            <source src="../assets/sounds/rain.mp3" />
+          </audio>
+          <img src="../assets/svg/play.svg" alt="play" class="play" />
+          <svg
+            class="track-outline"
+            width="453"
+            height="453"
+            viewBox="0 0 453 453"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="226.5"
+              cy="226.5"
+              r="216.5"
+              stroke="white"
+              stroke-width="20"
+            />
+          </svg>
+          <svg
+            class="moving-outline"
+            width="453"
+            height="453"
+            viewBox="0 0 453 453"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="226.5"
+              cy="226.5"
+              r="216.5"
+              stroke="#018EBA"
+              stroke-width="20"
+            />
+          </svg>
+          <h3 class="time-display">0:00</h3>
+        </div>
+        <div class="sound-picker">
+          <button
+            data-sound="../assets/sounds/rain.mp3"
+            data-video="../assets/video/rain.mp4"
+          >
+            <img src="../assets/svg/rain.svg" alt="rain" />
+          </button>
+          <button
+            data-sound="../assets/sounds/beach.mp3"
+            data-video="../assets/video/beach.mp4"
+          >
+            <img src="../assets/svg/beach.svg" alt="beach" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>2024</p>
+        <div class="contacts-container">
+          <a href="https://github.com/Ihar-Batura" target="_blank">
+            <img src="../assets/icons/logo-git.png" alt="logo git" />
+          </a>
+          <a
+            href="https://discordapp.com/users/925457041785512027/"
+            target="_blank"
+          >
+            <img src="../assets/icons/logo-discord.png" alt="logo discord" />
+          </a>
+          <a href="mailto:a17331582@gmail.com">
+            <img src="../assets/icons/logo-mail.png" alt="logo mail" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
