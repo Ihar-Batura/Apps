@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/apps.png"
+    />
+    <link rel="stylesheet" href="../styles/apps.css" />
+    <link rel="stylesheet" href="../styles/canvas.css" />
+    <script src="../js/canvas.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a href="../index.html">
+            <img
+              class="logo-img"
+              src="../assets/icons/apps-logo.png"
+              alt="logo"
+            />
+            <p class="logo-text">My Apps</p>
+          </a>
+        </div>
+        <h1>Study JavaScript every day</h1>
+        <a href="https://javascript.info/" target="_blank">
+          <img
+            class="logo-img"
+            src="../assets/icons/logo-js.png"
+            alt="logo JS"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper wrapper-canvas">
+        <div class="canvas-control">
+          <label for="color">Line color:</label>
+          <input id="color" type="color" class="color" value="#F20707" />
+          <label for="size">Line size:</label>
+          <input
+            id="size"
+            class="size"
+            type="range"
+            min="1"
+            max="50"
+            value="1"
+          />
+        </div>
+        <canvas id="canvas" class="canvas"></canvas>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>2024</p>
+        <div class="contacts-container">
+          <a href="https://github.com/Ihar-Batura" target="_blank">
+            <img src="../assets/icons/logo-git.png" alt="logo git" />
+          </a>
+          <a
+            href="https://discordapp.com/users/925457041785512027/"
+            target="_blank"
+          >
+            <img src="../assets/icons/logo-discord.png" alt="logo discord" />
+          </a>
+          <a href="mailto:a17331582@gmail.com">
+            <img src="../assets/icons/logo-mail.png" alt="logo mail" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

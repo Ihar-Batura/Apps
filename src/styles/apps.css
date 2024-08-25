@@ -37,6 +37,7 @@ p {
 
 body {
   letter-spacing: 0.05em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .wrapper {
   max-width: 1440px;
@@ -45,6 +46,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+}
+
+.wrapper-main {
+  justify-content: center;
 }
 .logo-container {
   display: flex;
