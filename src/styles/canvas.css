@@ -1,0 +1,23 @@
+.wrapper-canvas {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.canvas-control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+.canvas-control > label {
+  font-size: 20px;
+}
+
+.canvas {
+  width: 100%;
+  max-width: 1300px;
+  height: calc(100% - 60px);
+  border: 4mm ridge rgba(211, 220, 50, 0.6);
+}
