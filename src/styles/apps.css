@@ -72,7 +72,7 @@ h1 {
 }
 
 .main {
-  height: calc(100vh - 134px);
+  min-height: calc(100vh - 134px);
 }
 
 .apps-container {
@@ -132,7 +132,7 @@ h1 {
   }
 
   .main {
-    height: calc(100vh - 111px);
+    min-height: calc(100vh - 111px);
   }
 
   .footer p {
