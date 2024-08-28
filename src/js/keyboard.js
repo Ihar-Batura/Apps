@@ -50,7 +50,6 @@ const keyLayout = [
   'k',
   'l',
   'enter',
-  'done',
   'z',
   'x',
   'c',
@@ -78,21 +77,32 @@ keyLayout.forEach((key) => {
   if (key === 'backspace') {
     keyElement.classList.add('keyboard-key__wide');
     keyElement.innerHTML = createIconHTML('backspace');
+
     keyElement.addEventListener('click', () => {
       display.value = display.value.substring(0, display.value.length - 1);
     });
   } else if (key === 'caps') {
     keyElement.classList.add('keyboard-key__wide', 'keyboard-key__activatable');
     keyElement.innerHTML = createIconHTML('keyboard_capslock');
+
+    keyElement.addEventListener('click', () => {
+      toggleCapsLock();
+      keyElement.classList.toggle('keyboard-key__active');
+    });
   } else if (key === 'enter') {
     keyElement.classList.add('keyboard-key__wide');
     keyElement.innerHTML = createIconHTML('keyboard_return');
+
+    keyElement.addEventListener('click', () => {
+      display.value += '\n';
+    });
   } else if (key === 'space') {
     keyElement.classList.add('keyboard-key__extra-wide');
     keyElement.innerHTML = createIconHTML('space_bar');
-  } else if (key === 'done') {
-    keyElement.classList.add('keyboard-key__wide', 'keyboard-key__dark');
-    keyElement.innerHTML = createIconHTML('check_circle');
+
+    keyElement.addEventListener('click', () => {
+      display.value += ' ';
+    });
   } else {
     keyElement.textContent = key.toLowerCase();
     keyElement.addEventListener('click', () => {
@@ -104,5 +114,41 @@ keyLayout.forEach((key) => {
 
   if (insertLineBreak) {
     keyboardKeys.appendChild(document.createElement('br')); //перенос строки
+  }
+});
+
+let capsLock = false; // флаг нажатия капслок
+function toggleCapsLock() {
+  //функция меняет буквы в верхний и нижний регистр
+  capsLock = !capsLock;
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach((button) => {
+    if (button.childElementCount === 0) {
+      button.textContent =
+        capsLock === true
+          ? button.textContent.toUpperCase()
+          : button.textContent.toLowerCase();
+    }
+  });
+}
+
+// слушатель для ввода символов с помощью клавиатуры
+document.addEventListener('keydown', function (event) {
+  const symbol = event.code;
+
+  if (event.key === 'Backspace') {
+    display.value = display.value.substring(0, display.value.length - 1);
+  } else if (event.key === 'CapsLock') {
+    toggleCapsLock();
+  } else if (event.key === 'Enter') {
+    display.value += '\n';
+  } else if (event.key === ' ') {
+    display.value += ' ';
+  } else if (symbol.includes('Digit')) {
+    display.value += event.key;
+  } else if (symbol.includes('Key')) {
+    display.value += event.key;
+  } else if (event.key === '.' || event.key === ',' || event.key === '?') {
+    display.value += event.key;
   }
 });
