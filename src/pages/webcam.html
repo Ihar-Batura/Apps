@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Apps</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/apps.png"
+    />
+    <link rel="stylesheet" href="../styles/apps.css" />
+    <link rel="stylesheet" href="../styles/webcam.css" />
+    <script src="../js/webcam.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a href="../index.html">
+            <img
+              class="logo-img"
+              src="../assets/icons/apps-logo.png"
+              alt="logo"
+            />
+            <p class="logo-text">My Apps</p>
+          </a>
+        </div>
+        <h1>Study JavaScript every day</h1>
+        <a href="https://javascript.info/" target="_blank">
+          <img
+            class="logo-img"
+            src="../assets/icons/logo-js.png"
+            alt="logo JS"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper wrapper-main">
+        <div class="photobooth">
+          <div class="controls">
+            <div class="rgb">
+              <label for="red">Red:</label>
+              <input
+                class="input-red"
+                type="range"
+                min="0"
+                max="255"
+                value="0"
+                name="rmin"
+              />
+              <label for="green">Green:</label>
+              <input
+                class="input-green"
+                type="range"
+                min="0"
+                max="255"
+                value="0"
+                name="gmin"
+              />
+              <label for="blue">Blue:</label>
+              <input
+                class="input-blue"
+                type="range"
+                min="0"
+                max="255"
+                value="0"
+                name="bmin"
+              />
+            </div>
+            <button class="take-photo">Take Photo</button>
+            <video class="player"></video>
+          </div>
+
+          <canvas class="photo"></canvas>
+          <div class="strip"></div>
+        </div>
+        <audio class="snap" src="../assets/sounds/snap.mp3" hidden></audio>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>2024</p>
+        <div class="contacts-container">
+          <a href="https://github.com/Ihar-Batura" target="_blank">
+            <img src="../assets/icons/logo-git.png" alt="logo git" />
+          </a>
+          <a
+            href="https://discordapp.com/users/925457041785512027/"
+            target="_blank"
+          >
+            <img src="../assets/icons/logo-discord.png" alt="logo discord" />
+          </a>
+          <a href="mailto:a17331582@gmail.com">
+            <img src="../assets/icons/logo-mail.png" alt="logo mail" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
