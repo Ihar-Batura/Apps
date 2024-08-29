@@ -28,7 +28,7 @@ function displaySearch() {
   resultText.textContent = 'Result:';
 
   // при удалении запроса удаляет последний результат поиска
-  if (this.value === '') {
+  if (this.value === '' || searchArray.length < 1) {
     resultText.textContent = 'there is not a single result';
     return;
   }
