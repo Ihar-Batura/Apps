@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Apps</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/apps.png"
+    />
+    <link rel="stylesheet" href="../styles/apps.css" />
+    <link rel="stylesheet" href="../styles/reader.css" />
+    <script src="../js/reader.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo-container">
+          <a href="../index.html">
+            <img
+              class="logo-img"
+              src="../assets/icons/apps-logo.png"
+              alt="logo"
+            />
+            <p class="logo-text">My Apps</p>
+          </a>
+        </div>
+        <h1>Study JavaScript every day</h1>
+        <a href="https://javascript.info/" target="_blank">
+          <img
+            class="logo-img"
+            src="../assets/icons/logo-js.png"
+            alt="logo JS"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper wrapper-main">
+        <div class="voiceinator">
+          <h2>The Voiceinator</h2>
+          <select name="voice" id="voices">
+            <option value="">Select A Voice</option>
+          </select>
+          <label for="rate">Rate:</label>
+          <input
+            name="rate"
+            type="range"
+            min="0"
+            max="3"
+            value="1"
+            step="0.1"
+          />
+
+          <label for="pitch">Pitch:</label>
+
+          <input name="pitch" type="range" min="0" max="2" step="0.1" />
+          <textarea name="text">
+Do not let your fire go out, spark by irreplaceable spark in the hopeless swamps of the not-quite, the not-yet, and the not-at-all. Do not let the hero in your soul perish in lonely frustration for the life you deserved and have never been able to reach. The world you desire can be won. It exists.. it is real.. it is possible.. it's yours.
+If you don't know, the thing to do is not to get scared, but to learn.
+Devotion to the truth is the hallmark of morality; there is no greater, nobler, more heroic form of devotion than the act of a man who assumes the responsibility of thinking.
+What greater wealth is there than to own your life and to spend it on growing? Every living thing must grow. It can't stand still. It must grow or perish.
+</textarea
+          >
+          <div class="btn-container">
+            <button id="stop">Stop!</button>
+            <button id="speak">Speak</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>2024</p>
+        <div class="contacts-container">
+          <a href="https://github.com/Ihar-Batura" target="_blank">
+            <img src="../assets/icons/logo-git.png" alt="logo git" />
+          </a>
+          <a
+            href="https://discordapp.com/users/925457041785512027/"
+            target="_blank"
+          >
+            <img src="../assets/icons/logo-discord.png" alt="logo discord" />
+          </a>
+          <a href="mailto:a17331582@gmail.com">
+            <img src="../assets/icons/logo-mail.png" alt="logo mail" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
